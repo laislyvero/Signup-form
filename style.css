@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    padding:32px;
+    background-color:maroon;
+    margin: 0 300px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+input[type=text],
+input[type=Password],
+input[type=email] {
+    width:100%;
+    padding:15px;
+    margin:5px 0 22px 0;
+    display:inline-block;
+    border:none;
+    background:#f1f1f1;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    background-color: #add;
+    outline:none;
+}
+h1{
+    color: white;
+    padding-left: 200px;
+}
+p{
+    font-size: 1.0rem;
+    font-weight: 100px;
+    color:white;
+    padding-left: 100px;
+
+}
+hr{
+    border:1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:black;
+    color:white;
+    padding:14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 200px;
+    border-radius: 20px;
+}
+button :hover{
+    opacity:1;
+}
+.signup, .login{
+    float:right;
+    max-width: 50px;
+}
+clearfix ::after {
+content:"";
+clear:both;
+display: table;
+}
+@media screen and (max-width:700px){
+    .signupbtn, .loginbtn {
+        width:100%;
+    }
+    input[type=text],
+    input[type=password],
+    input[type=email] {
+        width: 50%;
+    }
+}
